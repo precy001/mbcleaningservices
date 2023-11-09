@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title title="20231002_133331.png">cleaning services</title>
+    <link rel="stylesheet" href="MB-cleaning-services.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div>
+    <header>
+        <img src="logo.png" class="logo2">
+    </header>
+    <button class="hamburger">
+        <div class="bar"></div>
+    </button>
+    <nav class="mobile-nav">
+        <button class="mobile-home-button" onclick="moveToHomePage();">Home</button>
+        <button class="mobile-about-button" onclick="moveToAboutPage();">About</button>
+        <button class="mobile-services-button" onclick="moveToServicePage();">Services</button>
+        <button class="mobile-contact-button" onclick="moveToContactPage();">Contact</button>
+    </nav>
+    <nav class="computer-nav">
+        <button class="js-home-button" onclick="moveToHomePage();">Home</button>
+        <button class="js-about-button" onclick="moveToAboutPage();">About</button>
+        <button class="js-service-button" onclick="moveToServicePage();">Services</button>
+        <button class="js-contact-button" onclick="moveToContactPage();">Contact</button>
+    </nav>
+    </div>
+    <main class="js-main">
+<!--code for home page-->
+    <article class="js-homepage">
+        <img src="Untitled-1.png" class="img">
+        <div class="article">
+            Professional<br> cleaning services<br> <span class="span">For your hostel</span>
+            <div class="about">Affordable and economical way to clean your premises professionaly with a host of
+                <br>
+                services aimed at easing you off 
+                the stress of cleaning.
+                <button class="js-get-started" onclick="moveToServicePage();">Get started</button>
+              </div>
+        </div>
+    </article>
+<!--end of code for home page-->
+
+
+<!--code for services page-->
+<article class="js-service-page">
+    <div class="short-note">
+        Providing the Best Services <br> for Our Customers
+    </div>
+    <center>
+    <hr>
+    </center>
+    <div class="container">
+    <div class="services">
+        <img src="icons8-housekeeping-50.png" class="icon media" width="50" height="50">
+        <p class="detail">Sweeping and Mopping</p>
+        <p class="more-details">
+            Sweeping and mopping of the whole house, Wardrobe arrangment, arrangment of the house and 
+            trashing the waste bin.
+        </p>
+        <button class="js-add-service-sweep add-service sweep" onclick="calculateBill('sweepAndMop');">Add service</button>
+    </div>
+    <div class="services">
+        <img src="icons8-ironing-50.png" class="icon media width="50" height="50">
+        <p class="detail">Laundry</p>
+        <p class="more-details">
+            Washing of clothes, dry-cleaning, Ironing, Folding and packaging clothes.
+        </p>
+        <center>
+        <input type="number" min="0" class="js-number" id="number" name="number" placeholder="Number of clothes">
+        </center>
+        <button class="js-add-service-laundry add-service laundry" onclick="calculateBill('laundry');">Add service</button>
+    </div>
+    <div class="services">
+        <img src="icons8-clean-toilet-50.png" class="icon media" width="50" height="50">
+        <p class="detail">Toilet cleaning</p>
+        <p class="more-details">
+            Washing toilet floors, scrubbing walls and Disinfecting the toilet.
+        </p>
+        <button class="js-add-service-toilet add-service toilet" onclick="calculateBill('cleanToilet');">Add service</button>
+    </div>
+    </div>
+    <div class="container">
+    <div class="services">
+        <img src="icons8-washing-dishes-50.png" class="icon media" width="50" height="50">
+        <p class="detail">Dish washing</p>
+        <p class="more-details">
+            Washing the dishes, cleaning the kitchen, cleaning the kitchen walls.
+        </p>
+        <button class="js-add-service-wash-dish add-service dish" onclick="calculateBill('washDish');">Add service</button>
+    </div>
+    <div class="services">
+        <img src="icons8-spray-50.png" class="icon media" width="50" height="50">
+        <p class="detail">Room spraying and Window cleaning</p>
+        <p class="more-details">
+            Cleaning windows, ceiling fans, and spraying the room with an air freshener.
+        </p>
+        <button class="js-add-service-spray-room add-service spray-room" onclick="calculateBill('sprayRoom');">Add service</button>
+    </div>
+    <div class="services">
+        <img src="icons8-renew-50.png" class="icon media" width="50" height="50">
+        <p class="detail">Monthly subscription</p>
+        <p class="more-details">
+            This is an exclusive deal, it covers all the services we offer.
+            The cleaning would be done twice every week for one month. 
+        </p>
+        <button class="js-add-service-subscribe add-service subscribe" onclick="calculateBill('subscribeMonthly');">Add service</button>
+    </div>
+    </div>
+    <center>
+    <button class="js-pay-now" onclick="checkServicesButton();">Pay Now</button>
+    </center>    
+</article>
+<!--end of code for service page-->
+
+
+<!--code for about page-->
+<article class="js-about-page">
+    <div class="short-note">
+        We will make absolutely any <br> place clean, neat & tidy.
+    </div>
+    <center>
+        <hr>
+    </center>
+        <div class="about-container"> 
+            <img src="7d0680c5b68869fbc30e3bf6e75204b0.jpg" width="368" height="368" class="about-image">
+            <div class="abouts">
+            <div>
+                <img src="icons8-checkmark-50.png" width="50" height="50" class="icon about-icon">
+                <div class="icon-span">We are committed</div>
+            </div>
+
+            <div>
+                <img src="icons8-checkmark-50.png" width="50" height="50" class="icon about-icon">
+                <div class="icon-span">Cutomer focused reviews</div>
+            </div>
+
+            <div>
+                <img src="icons8-checkmark-50.png" width="50" height="50" class="icon about-icon">
+                <div class="icon-span">Expert cleaning staff</div>
+            </div>
+
+            <div>
+                <img src="icons8-checkmark-50.png" width="50" height="50" class="icon about-icon">
+                <div class="icon-span">100% satisfaction guaranteed</div>
+            </div>
+            </div>
+
+            <button class="js-read-more" onclick="moveToReadMore();">Read more</button>
+        </div>
+</article>
+<!--end of code for about page-->
+
+<!--code for read more page-->
+<article class="js-working-process">
+    <div class="short-note">
+        Our working process
+    </div>
+    <center>
+        <hr class="horizontal-rule">
+    </center>
+    <div class="what-we-do">
+        At MB cleaning, we offer amazing services that will leave your space sparkling clean, 
+        <br>
+        Our team of experienced proffrsionals is dedicated to providing top-notch services and attention to detail.
+        <br>
+        Below are the steps to help you get started
+    </div>
+    
+    <div class="instruction-container"> 
+        <div class="instruction-process">
+        <img src="icons8-select-50.png" class="icon process" width="50" height="50">
+        <div class="instruction">Select a service</div>
+        <div class="further-instruction">
+            Select a desired service and click 'Pay now'. more that one service can be selected at the same time
+        </div>
+        </div>
+
+        <div class="instruction-process">
+            <img src="icons8-card-payment-50.png" class="icon process" width="50" height="50">
+            <div class="instruction">Pay for the selected service</div>
+            <div class="further-instruction">
+                The amount to be paid would be calculated based on the service you selected, pay into the account displayed on the screen,
+                Once you've paid, click the "I've paid" button 
+        </div>
+        </div>
+
+        <div class="instruction-process">
+            <img src="icons8-form-50.png" class="icon process" width="50" height="50">
+            <div class="instruction">Upload your receipt</div>
+            <div class="further-instruction">
+                You would be re-directed to a page where you would upload your receipt and fill the form after it, then sit back and enjoy our services
+        </div>
+        </div>
+    </div>
+</article>
+<!--end of code for read more page-->
+
+<!--code for contact page-->
+<article class="js-contact-page">
+    <div class="contact">
+        Contact Us
+        <div class="note">
+            Feel free to contact us anytime, we will get  back to<br> you as soon as we can
+        </div>
+        <form class="contact-form" action="https://formspree.io/f/mnqklvdp" method="POST">
+            <!-- <input type="file" placeholder="upload your receipt" name="Receipt" required> -->
+            <input type="text" placeholder="Name" name="name" required>
+            <input type="text" placeholder="E-mail" name="email-address" required>
+            <input type="text" placeholder="Message" name="message" required>
+            <button class="js-send-button">Send</button>
+        </form>
+    </div>
+    <div class="info">
+        <div class="info-head">Info</div>
+    <div class="info-container">
+        <img src="icons8-mail-50.png" width="30" height="30" class="icon-img">
+        <div class="contact-platform">mbcleaningservices@gmail.com</div>
+    </div>
+    <div class="info-container">
+        <img src="icons8-rotary-dial-telephone-50.png" width="30" height="30" class="icon-img">
+        <div class="contact-platform">+234 705 862 7176</div>
+    </div> 
+    <div class="info-container">
+        <img src="icons8-whatsapp-50.png" width="30" height="30" class="icon-img">
+        <div class="contact-platform">+234 916 254 2339,   +234 903 154 0800</div>
+    </div>
+    </div>
+</article>
+<!--end of code for contact page-->
+
+<!--code for selection error-->
+<article class="js-selection-error-display">
+    <div class="error">
+        <center>
+        <img src="icons8-error-50.png" width="70" height="70" class="error-icon">
+        </center>
+        <div class="error-name">Error:
+        <span>Please select at least one of the services we offer,
+            <div>Tap ok to go back.</div></span>
+        <span><button class="js-ok-button" onclick="removeError(); ">Ok</button></span>
+        </div>
+    </div>
+ </article>
+<!--end of code for selection error-->
+
+<!--code for input cloth number error-->
+<article class="js-input-selection-error">
+<div class="error">
+    <center>
+    <img src="icons8-error-50.png" width="70" height="70" class="error-icon">
+    </center>
+    <div class="error-name">Error:
+    <span>Please input the number of clothes you want to clean,
+        <div>Tap ok to go back.</div></span>
+    <span><button class="js-ok-button" onclick="removeError(); ">Ok</button></span>
+    </div>
+</div>
+</article>
+<!--end of code for input cloth number error-->
+
+<!--code to display account-->
+<article class="js-display-account">
+    <div class="display-account-container">
+        <img src="icons8-card-payment-50.png" width="50" height="50" class="icon payment">
+        <p class="js-bill"></p>
+        <p class="js-bill-amount">Account number: 9031540800</p>
+        <p class="js-bill-amount">Bank Name: Palmpay</p>
+        <p class="js-bill-amount">Account Name: Adewuyi Oyinda</p>
+        <center>
+        <button class="js-paid-button" onclick="displayForm();">I have paid</button>
+        </center>
+    </div>
+    </article>
+<!--end of code to display account-->
+
+
+<!--code for apply form-->
+<article class="js-apply-form">
+    <div class="short-note">Fill the form appropriately</div>
+    <center>
+    <hr> 
+    </center>
+<div class="form-container">
+<form class="form-content" action="https://formsubmit.co/mbcleaningservices001@gmail.com" method="post" enctype="multipart/form-data">
+    <label for="receipt">Upload receipt</label>
+    <input type="file" name="receipt" id="receipt" title="Upload your reciept of payment" required>
+    <input type="text" name="name" placeholder="Name" required> 
+    <input type="text" name="Phone number" placeholder="Phone No." required>
+    <input type="text" name="department" placeholder="Department">
+    <input type="text" name="level" placeholder="Level">
+    <label for="hostel">Select your hostel</label>
+    <select name="hostel" id="hostel" required>
+        <option value="Marierie Hall">Mariere Hall</option>
+        <option value="King Jaja Hall">King Jaja Hall</option>
+        <option value="Eni Njoku hall">Eni Njoku hall</option>
+        <option value="Sodeinde Hall">Sodeinde Hall</option>
+        <option value="Biobaku Hall">Biobaku Hall</option>
+        <option value="El-Kanemi Hall">El-Kanemi Hall</option>
+        <option value="Fagunwa Hall">Fagunwa Hall</option>
+        <option value="Kofo Ademola Hall">Kofo Ademola Hall</option>
+        <option value="Madam Tinibu Hall">Madam Tinibu Hall</option>
+        <option value="Honour's Hall">Honour's Hall</option>
+        <option value="Queen Amina Hall">Queen Amina Hall</option>
+        <option value="Makama-Bida Hall">Makama-Bida Hall</option>
+        <option value="Queen Moremi Hall">Queen Moremi Hall</option>
+    </select>
+    <input type="text" name="room number" placeholder="Room No." required>
+    <label for="gender" class="select-gender">Male</label>
+    <input type="radio" id="gender" name="gender">
+    <label for="gender">female</label>
+    <input type="radio" id="gender" name="gender">
+    <input type="text" name="selected service" class="developer-add">
+    <button class="submit">Submit</button>
+</form>
+</div>
+</article>
+</main>
+<script src="MB-cleaning-services.js" defer></script>
+</body>
+</html>
+
+
